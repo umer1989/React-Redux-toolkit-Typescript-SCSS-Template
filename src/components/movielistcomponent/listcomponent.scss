@@ -1,0 +1,19 @@
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  width: 50%;
+  .MuiTableCell-body{
+       color: #4b6375;
+  }
+  .MuiTableCell-root{
+    color: #4b6375;
+  }
+}
+
+@media (max-width:600px) {
+  .MuiPaper-elevation1 {
+    width: 100%;
+  }
+  .makeStyles-table-3{
+    min-width: auto !important;
+  }
+}

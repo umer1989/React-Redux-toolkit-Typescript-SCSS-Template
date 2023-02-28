@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="19.25">
+  <testsuite name="src\pages\app\App.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-02-27T14:44:53" time="8.169" tests="1">
+    <testcase classname="-renders learn react link" name="-renders learn react link" time="0.095">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\pages\movie-container\movie-container.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-02-27T14:44:53" time="10.786" tests="1">
+    <testcase classname="-test getSomeData" name="-test getSomeData" time="0.153">
+    </testcase>
+  </testsuite>
+</testsuites>
