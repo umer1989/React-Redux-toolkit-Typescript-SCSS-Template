@@ -78,4 +78,5 @@ http://localhost:3000/
 ```
 
 -Test Report
-(https://github.com/umer1989/etraveli-assignment/blob/master/test_report.jpg)
+[![Test Report](https://github.com/umer1989/etraveli-assignment/blob/master/test_report.jpg)]
+
