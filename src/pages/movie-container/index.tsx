@@ -57,12 +57,13 @@ function Movie() {
 
     return (
         <>
-            {status === 'loading' ? (
+            {status === 'loading' && (
                 <div className="progress-bar">
                     <CircularProgress />
                     <span>Loading...</span>
                 </div>
-            ) : (
+            )}
+            {status !== 'loading' && (
                 <>
                     <SearchComponent
                         searchInputChangeCallback={searchInputChangeCallback}

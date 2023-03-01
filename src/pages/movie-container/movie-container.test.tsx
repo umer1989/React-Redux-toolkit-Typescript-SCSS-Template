@@ -1,16 +1,10 @@
 import nock from 'nock'
 import { render, screen } from '@testing-library/react'
-import MovieContainer from './index'
 import { Provider } from 'react-redux'
-import configureMockStore from 'redux-mock-store'
-import thunk from 'redux-thunk'
+import MovieContainer from './index'
+import store from '../../redux/configure-store'
 
-//Configuring a mockStore
-const middlewares = [thunk]
-const mockStore = configureMockStore(middlewares)
 test('test getSomeData', () => {
-    const store = mockStore({})
-
     nock('https://swapi.dev/api/films/?format=json')
         .get('/api')
         .once()
@@ -22,6 +16,6 @@ test('test getSomeData', () => {
             <MovieContainer />
         </Provider>,
     )
-    const linkElement = screen.getByText(/No Movie Selected/i)
+    const linkElement = screen.getByText(/Loading.../i)
     expect(linkElement).toBeInTheDocument()
 })
