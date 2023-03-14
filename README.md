@@ -1,4 +1,4 @@
-# Umer's Assignment
+# React Redux-Toolkit - Typescript - SCSS - Template
 
 ## Tech
 
